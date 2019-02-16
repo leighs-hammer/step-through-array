@@ -1,0 +1,41 @@
+{
+  "name": "step-through-array",
+  "version": "0.0.1",
+  "description": "Steps over an array ov values, forward or reverse",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register ./src/**/*.test.js",
+    "test-dist": "mocha ./dist/**/*.test.js",
+    "babel": "babel src --out-dir dist",
+    "build": "npm run babel",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leighs-hammer/step-through-array.git"
+  },
+  "keywords": [
+    "array",
+    "helper"
+  ],
+  "author": "Leigh Barnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leighs-hammer/step-through-array/issues"
+  },
+  "homepage": "https://github.com/leighs-hammer/step-through-array#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "codecov": "^3.2.0",
+    "eslint": "^5.14.0",
+    "husky": "^1.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
