@@ -4,6 +4,8 @@ value. It will return to the begining when it hits the end of the array.
 
 ## Usage
 
+### Standard forwards and backwards
+
 ```
 	import stepThroughArray from 'step-through-array' 
 
@@ -24,3 +26,7 @@ value. It will return to the begining when it hits the end of the array.
 
 
 ```
+
+### Looping
+
+If the next value is undefined it will return to the beginning or the end respectively.

@@ -8,7 +8,8 @@
     "test-dist": "mocha ./dist/**/*.test.js",
     "babel": "babel src --out-dir dist",
     "build": "npm run babel",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "cover" : "istanbul cover ./node_modules/mocha/bin/_mocha ./dist/index.test.js --report lcovonly -- -R spec && codecov -t 8e7a127a-0ef9-411a-8ae5-dffc85e7487f"
   },
   "repository": {
     "type": "git",

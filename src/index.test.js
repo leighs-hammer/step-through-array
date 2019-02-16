@@ -11,6 +11,8 @@ describe('STEP THROUGH ARRAY: Success Tests', () => {
 	it('it should step to the next value', () => {
 		const  returnedValue = stepThroughArray(mockValue, mockArray)
 		expect(returnedValue).to.be.eql('bears')
+		const  returnedValueImplicit = stepThroughArray(mockValue, mockArray, false)
+		expect(returnedValue).to.be.eql('bears')
 	})
 
 	it('it should step to the previous value', () => {
