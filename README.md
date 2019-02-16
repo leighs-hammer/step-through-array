@@ -13,7 +13,7 @@ value. It will return to the begining when it hits the end of the array.
 
 	let current = 'tigers'
 	const array = ['tigers', 'bears', 'lions']
-	const revers = false // optional passing true will step backwards
+	const reverse = false // optional passing true will step backwards
 
 	current = stepThroughArray(current, array, reverse)
 
@@ -22,5 +22,5 @@ value. It will return to the begining when it hits the end of the array.
 	current = stepThroughArray(current, array, reverse)
 	// current === 'lions'
 
-	
+
 ```
